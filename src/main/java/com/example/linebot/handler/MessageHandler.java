@@ -38,48 +38,29 @@ public class MessageHandler {
 	}
 
 	private void text(String replyToken, String text) throws IOException {
+
 		Document document = Jsoup.connect("https://gas.goodlife.tw/").get();
-		Elements items = document.getElementsByClass("scroll");
-		Document document1 = Jsoup.connect("https://www.kiss.com.tw/music/billboard.php").get();
+		Element items = document.getElementById("fixlayer");
+		Document document1 = Jsoup.connect("https://music-tw.line.me/chart/99").get();
 		Element items1 = document1.getElementById("content");
-		Document document2 = Jsoup.connect("https://www.kiss.com.tw/music/billboard.php?a=3").get();
-		Element items2 = document2.getElementById("content");
-		for (Element item : items) {
-			String title1 = item.getElementsByClass("main").get(0).getElementsByTag("p").get(0).text();
-			String title = item.getElementsByClass("main").get(0).getElementsByTag("h2").get(0).text();
-//華語
-			String page=items1.getElementsByClass("pagename").get(0).text();
-			String list1 = items1.getElementsByTag("th").get(1).text();
-			String list2 = items1.getElementsByTag("th").get(2).text();
-			String list3 = items1.getElementsByTag("th").get(3).text();
-			String singer11 = items1.getElementById("billboard").getElementsByTag("td").get(1).text();
-			String singer12 = items1.getElementById("billboard").getElementsByTag("td").get(2).text();
-			String singer13 = items1.getElementById("billboard").getElementsByTag("td").get(3).text();
 
-			String singer21 = items1.getElementById("billboard").getElementsByTag("td").get(9).text();
-			String singer22 = items1.getElementById("billboard").getElementsByTag("td").get(10).text();
-			String singer23 = items1.getElementById("billboard").getElementsByTag("td").get(11).text();
-
-			String singer31 = items1.getElementById("billboard").getElementsByTag("td").get(17).text();
-			String singer32 = items1.getElementById("billboard").getElementsByTag("td").get(18).text();
-			String singer33 = items1.getElementById("billboard").getElementsByTag("td").get(19).text();
-			//西洋
-			String page3=items2.getElementsByClass("pagename").get(0).text();
-			String singer311 = items2.getElementById("billboard").getElementsByTag("td").get(1).text();
-			String singer312 = items2.getElementById("billboard").getElementsByTag("td").get(2).text();
-			String singer313 = items2.getElementById("billboard").getElementsByTag("td").get(3).text();
-
-			String singer321 = items2.getElementById("billboard").getElementsByTag("td").get(9).text();
-			String singer322 = items2.getElementById("billboard").getElementsByTag("td").get(10).text();
-			String singer323 = items2.getElementById("billboard").getElementsByTag("td").get(11).text();
-
-			String singer331 = items2.getElementById("billboard").getElementsByTag("td").get(17).text();
-			String singer332 = items2.getElementById("billboard").getElementsByTag("td").get(18).text();
-			String singer333 = items2.getElementById("billboard").getElementsByTag("td").get(19).text();
-			String quote = "";
-			if (item.getElementsByClass("quote").size() > 0) {
-				quote = item.getElementsByClass("quote").get(0).text();
-			}
+		String oilup = items.getElementsByClass("update").get(0).text();
+		String oil = items.getElementsByClass("main").get(0).text();String rank=items1.getElementsByClass("text").get(0).text();
+			String list=items1.getElementsByClass("end_title").get(0).text();
+			String song1=items1.getElementsByClass("link_text").get(0).text();
+			String singer1=items1.getElementsByClass("link_artist").get(0).text();
+			String rank2=items1.getElementsByClass("text").get(1).text();
+			String song2=items1.getElementsByClass("link_text").get(1).text();
+			String singer2=items1.getElementsByClass("link_artist").get(2).text();
+			String rank3=items1.getElementsByClass("text").get(2).text();
+			String song3=items1.getElementsByClass("link_text").get(2).text();
+			String singer3=items1.getElementsByClass("link_artist").get(4).text();
+			String rank4=items1.getElementsByClass("text").get(3).text();
+			String song4=items1.getElementsByClass("link_text").get(3).text();
+			String singer4=items1.getElementsByClass("link_artist").get(6).text();
+			String rank5=items1.getElementsByClass("text").get(4).text();
+			String song5=items1.getElementsByClass("link_text").get(4).text();
+			String singer5=items1.getElementsByClass("link_artist").get(8).text();
 
 		JSONObject body = new JSONObject();
 		JSONArray messages = new JSONArray();
@@ -87,35 +68,30 @@ public class MessageHandler {
 		message.put("type", "text");
 		switch (text){
 			case "你好":
-				message.put("text", "哈囉，我是全能小幫手");
+				message.put("text", "哈囉，我是全能小幫手Bnson");
 				break;
 			case "下周油價":
-				message.put("text", "下周油價："+"\n"+title1+title);
+				message.put("text", "下周油價："+"\n"+oil+"\n"+oilup);
 				break;
 			case "下週油價":
-				message.put("text", "下週油價："+"\n"+title1+title);
+				message.put("text", "下週油價："+"\n"+oil+"\n"+oilup);
 				break;
-			case "最新華語音樂排名":
-				message.put("text", page+"\n"+"第一名："+list1 +":"+ singer11+"\n"+ list2 +":"+ singer12+"\n"+list3 +":"+ singer13+"\n"+
-						"第二名："+list1 +":"+ singer21+"\n"+ list2 +":"+ singer22+"\n"+list3 +":"+ singer23+"\n"+
-						"第三名："+list1 +":"+ singer31+"\n"+ list2 +":"+ singer32+"\n"+list3 +":"+ singer33+"\n"
-				);
-				break;
-			case "最新西洋音樂排名":
-				message.put("text", page+"\n"+"第一名："+list1 +":"+ singer311+"\n"+ list2 +":"+ singer312+"\n"+list3 +":"+ singer313+"\n"+
-						"第二名："+list1 +":"+ singer321+"\n"+ list2 +":"+ singer322+"\n"+list3 +":"+ singer323+"\n"+
-						"第三名："+list1 +":"+ singer331+"\n"+ list2 +":"+ singer332+"\n"+list3 +":"+ singer333+"\n"
-				);
+			case "華語歌曲推薦":
+				message.put("text", list+"\n"+rank+"\n"+"歌名："+song1+"\n"+"演唱人："+singer1+"\n"
+						+rank2+"\n"+"歌名："+song2+"\n"+"演唱人："+singer2+"\n"
+						+rank3+"\n"+"歌名："+song3+"\n"+"演唱人："+singer3+"\n"
+						+rank4+"\n"+"歌名："+song4+"\n"+"演唱人："+singer4+"\n"
+						+rank5+"\n"+"歌名："+song5+"\n"+"演唱人："+singer5);
 				break;
 			default:
-				message.put("text", "我還看不懂，我目前只看得懂以下指令"+"\n"+":下周油價");
+				message.put("text", "我還看不懂，我目前只看得懂以下指令"+"\n"+":下周油價"+"\n"+":音樂推薦");
 			break;
 		}
 		messages.put(message);
 		body.put("replyToken", replyToken);
 		body.put("messages", messages);
 		sendLinePlatform(body);
-			}
+
 		}
 
 
