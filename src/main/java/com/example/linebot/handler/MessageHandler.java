@@ -42,10 +42,12 @@ public class MessageHandler {
 		Elements items = document.getElementsByClass("scroll");
 		Document document1 = Jsoup.connect("https://www.kiss.com.tw/music/billboard.php").get();
 		Element items1 = document1.getElementById("content");
+		Document document2 = Jsoup.connect("https://www.kiss.com.tw/music/billboard.php?a=3").get();
+		Element items2 = document1.getElementById("content");
 		for (Element item : items) {
 			String title1 = item.getElementsByClass("main").get(0).getElementsByTag("p").get(0).text();
 			String title = item.getElementsByClass("main").get(0).getElementsByTag("h2").get(0).text();
-
+//華語
 			String page=items1.getElementsByClass("pagename").get(0).text();
 			String list1 = items1.getElementsByTag("th").get(1).text();
 			String list2 = items1.getElementsByTag("th").get(2).text();
@@ -61,6 +63,19 @@ public class MessageHandler {
 			String singer31 = items1.getElementById("billboard").getElementsByTag("td").get(17).text();
 			String singer32 = items1.getElementById("billboard").getElementsByTag("td").get(18).text();
 			String singer33 = items1.getElementById("billboard").getElementsByTag("td").get(19).text();
+			//西洋
+			String page3=items2.getElementsByClass("pagename").get(0).text();
+			String singer311 = items2.getElementById("billboard").getElementsByTag("td").get(1).text();
+			String singer312 = items2.getElementById("billboard").getElementsByTag("td").get(2).text();
+			String singer313 = items2.getElementById("billboard").getElementsByTag("td").get(3).text();
+
+			String singer321 = items2.getElementById("billboard").getElementsByTag("td").get(9).text();
+			String singer322 = items2.getElementById("billboard").getElementsByTag("td").get(10).text();
+			String singer323 = items2.getElementById("billboard").getElementsByTag("td").get(11).text();
+
+			String singer331 = items2.getElementById("billboard").getElementsByTag("td").get(17).text();
+			String singer332 = items2.getElementById("billboard").getElementsByTag("td").get(18).text();
+			String singer333 = items2.getElementById("billboard").getElementsByTag("td").get(19).text();
 			String quote = "";
 			if (item.getElementsByClass("quote").size() > 0) {
 				quote = item.getElementsByClass("quote").get(0).text();
@@ -72,7 +87,7 @@ public class MessageHandler {
 		message.put("type", "text");
 		switch (text){
 			case "你好":
-				message.put("text", "哈囉，我是油價小幫手");
+				message.put("text", "哈囉，我是全能小幫手");
 				break;
 			case "下周油價":
 				message.put("text", "下周油價："+"\n"+title1+title);
@@ -80,10 +95,16 @@ public class MessageHandler {
 			case "下週油價":
 				message.put("text", "下週油價："+"\n"+title1+title);
 				break;
-			case "最新音樂排名":
+			case "最新華語音樂排名":
 				message.put("text", page+"\n"+"第一名："+list1 +":"+ singer11+"\n"+ list2 +":"+ singer12+"\n"+list3 +":"+ singer13+"\n"+
 						"第二名："+list1 +":"+ singer21+"\n"+ list2 +":"+ singer22+"\n"+list3 +":"+ singer23+"\n"+
 						"第三名："+list1 +":"+ singer31+"\n"+ list2 +":"+ singer32+"\n"+list3 +":"+ singer33+"\n"
+				);
+				break;
+			case "最新西洋音樂排名":
+				message.put("text", page+"\n"+"第一名："+list1 +":"+ singer311+"\n"+ list2 +":"+ singer312+"\n"+list3 +":"+ singer313+"\n"+
+						"第二名："+list1 +":"+ singer321+"\n"+ list2 +":"+ singer322+"\n"+list3 +":"+ singer323+"\n"+
+						"第三名："+list1 +":"+ singer331+"\n"+ list2 +":"+ singer332+"\n"+list3 +":"+ singer333+"\n"
 				);
 				break;
 			default:
