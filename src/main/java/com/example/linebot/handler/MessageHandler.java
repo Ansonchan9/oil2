@@ -43,7 +43,7 @@ public class MessageHandler {
 		Document document1 = Jsoup.connect("https://www.kiss.com.tw/music/billboard.php").get();
 		Element items1 = document1.getElementById("content");
 		Document document2 = Jsoup.connect("https://www.kiss.com.tw/music/billboard.php?a=3").get();
-		Element items2 = document1.getElementById("content");
+		Element items2 = document2.getElementById("content");
 		for (Element item : items) {
 			String title1 = item.getElementsByClass("main").get(0).getElementsByTag("p").get(0).text();
 			String title = item.getElementsByClass("main").get(0).getElementsByTag("h2").get(0).text();
