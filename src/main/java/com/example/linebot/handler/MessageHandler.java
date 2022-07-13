@@ -41,10 +41,11 @@ public class MessageHandler {
 		Document document = Jsoup.connect("https://gas.goodlife.tw/").get();
 		Elements items = document.getElementsByClass("scroll");
 		Document document1 = Jsoup.connect("https://www.kiss.com.tw/music/billboard.php").get();
-		Element items1 = document.getElementById("content");
+		Element items1 = document1.getElementById("content");
 		for (Element item : items) {
 			String title1 = item.getElementsByClass("main").get(0).getElementsByTag("p").get(0).text();
 			String title = item.getElementsByClass("main").get(0).getElementsByTag("h2").get(0).text();
+
 			String page=items1.getElementsByClass("pagename").get(0).text();
 			String list1 = items1.getElementsByTag("th").get(1).text();
 			String list2 = items1.getElementsByTag("th").get(2).text();
