@@ -40,55 +40,63 @@ public class MessageHandler {
 	private void text(String replyToken, String text) throws IOException {
 		Document document = Jsoup.connect("https://gas.goodlife.tw/").get();
 		Elements items = document.getElementsByClass("scroll");
+		Document document1 = Jsoup.connect("https://www.kiss.com.tw/music/billboard.php").get();
+		Element items1 = document.getElementById("content");
 		for (Element item : items) {
 			String title1 = item.getElementsByClass("main").get(0).getElementsByTag("p").get(0).text();
 			String title = item.getElementsByClass("main").get(0).getElementsByTag("h2").get(0).text();
+			String page=items1.getElementsByClass("pagename").get(0).text();
+			String list1 = items1.getElementsByTag("th").get(1).text();
+			String list2 = items1.getElementsByTag("th").get(2).text();
+			String list3 = items1.getElementsByTag("th").get(3).text();
+			String singer11 = items1.getElementById("billboard").getElementsByTag("td").get(1).text();
+			String singer12 = items1.getElementById("billboard").getElementsByTag("td").get(2).text();
+			String singer13 = items1.getElementById("billboard").getElementsByTag("td").get(3).text();
+
+			String singer21 = items1.getElementById("billboard").getElementsByTag("td").get(9).text();
+			String singer22 = items1.getElementById("billboard").getElementsByTag("td").get(10).text();
+			String singer23 = items1.getElementById("billboard").getElementsByTag("td").get(11).text();
+
+			String singer31 = items1.getElementById("billboard").getElementsByTag("td").get(17).text();
+			String singer32 = items1.getElementById("billboard").getElementsByTag("td").get(18).text();
+			String singer33 = items1.getElementById("billboard").getElementsByTag("td").get(19).text();
 			String quote = "";
 			if (item.getElementsByClass("quote").size() > 0) {
 				quote = item.getElementsByClass("quote").get(0).text();
 			}
-			Document document1 = Jsoup.connect("https://www.kiss.com.tw/music/billboard.php").get();
-			Element items1 = document1.getElementById("billboard");
-			for (int i = 0, k = 8, l = 16; i < 8 && k < 16 && l < 24; i++, k++, l++) {
-				String song1 = items1.getElementsByTag("th").get(i).text();
-				String singer1 = items1.getElementById("billboard").getElementsByTag("td").get(i).text();
-				String singer2 = items1.getElementById("billboard").getElementsByTag("td").get(k).text();
-				String singer3 = items1.getElementById("billboard").getElementsByTag("td").get(l).text();
-				JSONObject body = new JSONObject();
-				JSONArray messages = new JSONArray();
-				JSONObject message = new JSONObject();
-				message.put("type", "text");
-				switch (text) {
-					case "你好":
-						message.put("text", "哈囉，我是油價小幫手");
-						break;
-					case "下周油價":
-						message.put("text", "下周油價：" + "\n" + title1 + title);
-						break;
-					case "下週油價":
-						message.put("text", "下週油價：" + "\n" + title1 + title);
-						break;
-					case "第一名":
-						message.put("text", song1 + "\n" + singer1);
-						break;
-					case "第二名":
-						message.put("text", song1 + "\n" + singer2);
-						break;
-					case "第三名":
-						message.put("text", song1 + "\n" + singer3);
-						break;
-					default:
-						message.put("text", "我還看不懂，我目前只看得懂以下指令" + "\n" + ":下周油價");
-						break;
-				}
-				messages.put(message);
-				body.put("replyToken", replyToken);
-				body.put("messages", messages);
-				sendLinePlatform(body);
+
+		JSONObject body = new JSONObject();
+		JSONArray messages = new JSONArray();
+		JSONObject message = new JSONObject();
+		message.put("type", "text");
+		switch (text){
+			case "你好":
+				message.put("text", "哈囉，我是油價小幫手");
+				break;
+			case "下周油價":
+				message.put("text", "下周油價："+"\n"+title1+title);
+				break;
+			case "下週油價":
+				message.put("text", "下週油價："+"\n"+title1+title);
+				break;
+			case "最新音樂排名":
+				message.put("text", page+"\n"+"第一名："+list1 +":"+ singer11+"\n"+ list2 +":"+ singer12+"\n"+list3 +":"+ singer13+"\n"+
+						"第二名："+list1 +":"+ singer21+"\n"+ list2 +":"+ singer22+"\n"+list3 +":"+ singer23+"\n"+
+						"第三名："+list1 +":"+ singer31+"\n"+ list2 +":"+ singer32+"\n"+list3 +":"+ singer33+"\n"
+				);
+				break;
+			default:
+				message.put("text", "我還看不懂，我目前只看得懂以下指令"+"\n"+":下周油價");
+			break;
+		}
+		messages.put(message);
+		body.put("replyToken", replyToken);
+		body.put("messages", messages);
+		sendLinePlatform(body);
 			}
 		}
 
-	}
+
 	private void sticker(String replyToken, String packageId, String stickerId) {
 		JSONObject body = new JSONObject();
 		JSONArray messages = new JSONArray();
