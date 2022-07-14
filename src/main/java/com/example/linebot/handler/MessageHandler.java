@@ -78,7 +78,6 @@ public class MessageHandler {
 					+ st2 + "～" + et2 + "\n"  + "氣溫：" + mt2 + "度" + "~" + ht2 + "度" + "\n"+ "氣候：" + wx2 + "\n" + "降雨機率：" + pop2 + "%" + "\n" + "舒適度：" + ci2 + "\n"
 					+ st3 + "～" + et3 + "\n" + "氣溫：" + mt3 + "度" + "~" + ht3 + "度" + "\n"+ "氣候：" + wx3 + "\n" + "降雨機率：" + pop3 + "%" + "\n"  + "舒適度：" + ci3 + "\n");
 			messages.put(message);
-			messages.put(message);
 			body.put("replyToken", replyToken);
 			body.put("messages", messages);
 			sendLinePlatform(body);
