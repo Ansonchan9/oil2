@@ -70,13 +70,18 @@ public class MessageHandler {
 			String ci1 = item.getElementsByTag("parameterName").get(9).text();
 			String ci2 = item.getElementsByTag("parameterName").get(10).text();
 			String ci3 = item.getElementsByTag("parameterName").get(11).text();
-
+			JSONObject body = new JSONObject();
+			JSONArray messages = new JSONArray();
 			JSONObject message = new JSONObject();
 			message.put("type", "天氣 南投縣");
 			message.put("text",list + "\n" + loca1 + "\n" + st1 + "～" + et1 + "\n" + "氣溫：" + mt1 + "度" + "~" + ht1 + "度" + "\n"+ "氣候：" + wx1 + "\n" + "降雨機率：" + pop1 + "%" + "\n"  + "舒適度：" + ci1 + "\n"
 					+ st2 + "～" + et2 + "\n"  + "氣溫：" + mt2 + "度" + "~" + ht2 + "度" + "\n"+ "氣候：" + wx2 + "\n" + "降雨機率：" + pop2 + "%" + "\n" + "舒適度：" + ci2 + "\n"
 					+ st3 + "～" + et3 + "\n" + "氣溫：" + mt3 + "度" + "~" + ht3 + "度" + "\n"+ "氣候：" + wx3 + "\n" + "降雨機率：" + pop3 + "%" + "\n"  + "舒適度：" + ci3 + "\n");
-
+			messages.put(message);
+			messages.put(message);
+			body.put("replyToken", replyToken);
+			body.put("messages", messages);
+			sendLinePlatform(body);
 		}
 //雲林縣
 		Document document18 = Jsoup.connect("https://opendata.cwb.gov.tw/api/v1/rest/datastore/F-C0032-001?Authorization=CWB-C61A529F-C4D3-499A-8DFC-D1C585AED84A&format=XML&locationName=%E9%9B%B2%E6%9E%97%E7%B8%A3").get();
