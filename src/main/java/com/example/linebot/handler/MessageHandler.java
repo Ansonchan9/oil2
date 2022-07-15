@@ -194,13 +194,280 @@ public class MessageHandler {
 			String ht81 = item2.getElementsByTag("parameterName").get(102).text();
 			String ht82 = item2.getElementsByTag("parameterName").get(103).text();
 			String ht83 = item2.getElementsByTag("parameterName").get(104).text();
+//宜蘭縣
+			String loca91 = item2.getElementsByTag("locationName").get(7).text();
+			String wx91 = item2.getElementsByTag("parameterName").get(105).text();
+			String wx92 = item2.getElementsByTag("parameterName").get(106).text();
+			String wx93 = item2.getElementsByTag("parameterName").get(107).text();
+			String pop91 = item2.getElementsByTag("parameterName").get(108).text();
+			String pop92 = item2.getElementsByTag("parameterName").get(109).text();
+			String pop93 = item2.getElementsByTag("parameterName").get(110).text();
+			String mt91 = item2.getElementsByTag("parameterName").get(111).text();
+			String mt92 = item2.getElementsByTag("parameterName").get(112).text();
+			String mt93 = item2.getElementsByTag("parameterName").get(113).text();
+			String ci91 = item2.getElementsByTag("parameterName").get(114).text();
+			String ci92 = item2.getElementsByTag("parameterName").get(115).text();
+			String ci93 = item2.getElementsByTag("parameterName").get(116).text();
+			String ht91 = item2.getElementsByTag("parameterName").get(117).text();
+			String ht92 = item2.getElementsByTag("parameterName").get(118).text();
+			String ht93 = item2.getElementsByTag("parameterName").get(119).text();
+//苗栗縣
+			String loca101 = item2.getElementsByTag("locationName").get(8).text();
+			String wx101 = item2.getElementsByTag("parameterName").get(120).text();
+			String wx102 = item2.getElementsByTag("parameterName").get(121).text();
+			String wx103 = item2.getElementsByTag("parameterName").get(122).text();
+			String pop101 = item2.getElementsByTag("parameterName").get(123).text();
+			String pop102 = item2.getElementsByTag("parameterName").get(124).text();
+			String pop103 = item2.getElementsByTag("parameterName").get(125).text();
+			String mt101 = item2.getElementsByTag("parameterName").get(126).text();
+			String mt102 = item2.getElementsByTag("parameterName").get(127).text();
+			String mt103 = item2.getElementsByTag("parameterName").get(128).text();
+			String ci101 = item2.getElementsByTag("parameterName").get(129).text();
+			String ci102 = item2.getElementsByTag("parameterName").get(130).text();
+			String ci103 = item2.getElementsByTag("parameterName").get(131).text();
+			String ht101 = item2.getElementsByTag("parameterName").get(132).text();
+			String ht102 = item2.getElementsByTag("parameterName").get(133).text();
+			String ht103 = item2.getElementsByTag("parameterName").get(134).text();
+//雲林縣
+			String loca111 = item2.getElementsByTag("locationName").get(9).text();
+			String wx111 = item2.getElementsByTag("parameterName").get(135).text();
+			String wx112 = item2.getElementsByTag("parameterName").get(136).text();
+			String wx113 = item2.getElementsByTag("parameterName").get(137).text();
+			String pop111 = item2.getElementsByTag("parameterName").get(138).text();
+			String pop112 = item2.getElementsByTag("parameterName").get(139).text();
+			String pop113 = item2.getElementsByTag("parameterName").get(140).text();
+			String mt111 = item2.getElementsByTag("parameterName").get(141).text();
+			String mt112 = item2.getElementsByTag("parameterName").get(142).text();
+			String mt113 = item2.getElementsByTag("parameterName").get(143).text();
+			String ci111 = item2.getElementsByTag("parameterName").get(144).text();
+			String ci112 = item2.getElementsByTag("parameterName").get(145).text();
+			String ci113 = item2.getElementsByTag("parameterName").get(146).text();
+			String ht111 = item2.getElementsByTag("parameterName").get(147).text();
+			String ht112 = item2.getElementsByTag("parameterName").get(148).text();
+			String ht113 = item2.getElementsByTag("parameterName").get(149).text();
+//花蓮縣
+			String loca121 = item2.getElementsByTag("locationName").get(10).text();
+			String wx121 = item2.getElementsByTag("parameterName").get(150).text();
+			String wx122 = item2.getElementsByTag("parameterName").get(151).text();
+			String wx123 = item2.getElementsByTag("parameterName").get(152).text();
+			String pop121 = item2.getElementsByTag("parameterName").get(153).text();
+			String pop122 = item2.getElementsByTag("parameterName").get(154).text();
+			String pop123 = item2.getElementsByTag("parameterName").get(155).text();
+			String mt121 = item2.getElementsByTag("parameterName").get(156).text();
+			String mt122 = item2.getElementsByTag("parameterName").get(157).text();
+			String mt123 = item2.getElementsByTag("parameterName").get(158).text();
+			String ci121 = item2.getElementsByTag("parameterName").get(159).text();
+			String ci122 = item2.getElementsByTag("parameterName").get(160).text();
+			String ci123 = item2.getElementsByTag("parameterName").get(161).text();
+			String ht121 = item2.getElementsByTag("parameterName").get(162).text();
+			String ht122 = item2.getElementsByTag("parameterName").get(163).text();
+			String ht123 = item2.getElementsByTag("parameterName").get(164).text();
+//台中市
+			String loca131 = item2.getElementsByTag("locationName").get(11).text();
+			String wx131 = item2.getElementsByTag("parameterName").get(165).text();
+			String wx132 = item2.getElementsByTag("parameterName").get(166).text();
+			String wx133 = item2.getElementsByTag("parameterName").get(167).text();
+			String pop131 = item2.getElementsByTag("parameterName").get(168).text();
+			String pop132 = item2.getElementsByTag("parameterName").get(169).text();
+			String pop133 = item2.getElementsByTag("parameterName").get(170).text();
+			String mt131 = item2.getElementsByTag("parameterName").get(171).text();
+			String mt132 = item2.getElementsByTag("parameterName").get(172).text();
+			String mt133 = item2.getElementsByTag("parameterName").get(173).text();
+			String ci131 = item2.getElementsByTag("parameterName").get(174).text();
+			String ci132 = item2.getElementsByTag("parameterName").get(175).text();
+			String ci133 = item2.getElementsByTag("parameterName").get(176).text();
+			String ht131 = item2.getElementsByTag("parameterName").get(177).text();
+			String ht132 = item2.getElementsByTag("parameterName").get(178).text();
+			String ht133 = item2.getElementsByTag("parameterName").get(179).text();
+//台東縣
+			String loca141 = item2.getElementsByTag("locationName").get(12).text();
+			String wx141 = item2.getElementsByTag("parameterName").get(180).text();
+			String wx142 = item2.getElementsByTag("parameterName").get(181).text();
+			String wx143 = item2.getElementsByTag("parameterName").get(182).text();
+			String pop141 = item2.getElementsByTag("parameterName").get(183).text();
+			String pop142 = item2.getElementsByTag("parameterName").get(184).text();
+			String pop143 = item2.getElementsByTag("parameterName").get(185).text();
+			String mt141 = item2.getElementsByTag("parameterName").get(186).text();
+			String mt142 = item2.getElementsByTag("parameterName").get(187).text();
+			String mt143 = item2.getElementsByTag("parameterName").get(188).text();
+			String ci141 = item2.getElementsByTag("parameterName").get(189).text();
+			String ci142 = item2.getElementsByTag("parameterName").get(190).text();
+			String ci143 = item2.getElementsByTag("parameterName").get(191).text();
+			String ht141 = item2.getElementsByTag("parameterName").get(192).text();
+			String ht142 = item2.getElementsByTag("parameterName").get(193).text();
+			String ht143 = item2.getElementsByTag("parameterName").get(194).text();
+//桃園市
+			String loca151 = item2.getElementsByTag("locationName").get(13).text();
+			String wx151 = item2.getElementsByTag("parameterName").get(195).text();
+			String wx152 = item2.getElementsByTag("parameterName").get(196).text();
+			String wx153 = item2.getElementsByTag("parameterName").get(197).text();
+			String pop151 = item2.getElementsByTag("parameterName").get(198).text();
+			String pop152 = item2.getElementsByTag("parameterName").get(199).text();
+			String pop153 = item2.getElementsByTag("parameterName").get(200).text();
+			String mt151 = item2.getElementsByTag("parameterName").get(201).text();
+			String mt152 = item2.getElementsByTag("parameterName").get(202).text();
+			String mt153 = item2.getElementsByTag("parameterName").get(203).text();
+			String ci151 = item2.getElementsByTag("parameterName").get(204).text();
+			String ci152 = item2.getElementsByTag("parameterName").get(205).text();
+			String ci153 = item2.getElementsByTag("parameterName").get(206).text();
+			String ht151 = item2.getElementsByTag("parameterName").get(207).text();
+			String ht152 = item2.getElementsByTag("parameterName").get(208).text();
+			String ht153 = item2.getElementsByTag("parameterName").get(209).text();
+//南投縣
+			String loca161 = item2.getElementsByTag("locationName").get(14).text();
+			String wx161 = item2.getElementsByTag("parameterName").get(210).text();
+			String wx162 = item2.getElementsByTag("parameterName").get(211).text();
+			String wx163 = item2.getElementsByTag("parameterName").get(212).text();
+			String pop161 = item2.getElementsByTag("parameterName").get(213).text();
+			String pop162 = item2.getElementsByTag("parameterName").get(214).text();
+			String pop163 = item2.getElementsByTag("parameterName").get(215).text();
+			String mt161 = item2.getElementsByTag("parameterName").get(216).text();
+			String mt162 = item2.getElementsByTag("parameterName").get(217).text();
+			String mt163 = item2.getElementsByTag("parameterName").get(218).text();
+			String ci161 = item2.getElementsByTag("parameterName").get(219).text();
+			String ci162 = item2.getElementsByTag("parameterName").get(220).text();
+			String ci163 = item2.getElementsByTag("parameterName").get(221).text();
+			String ht161 = item2.getElementsByTag("parameterName").get(222).text();
+			String ht162 = item2.getElementsByTag("parameterName").get(223).text();
+			String ht163 = item2.getElementsByTag("parameterName").get(224).text();
+//高雄市
+			String loca171 = item2.getElementsByTag("locationName").get(15).text();
+			String wx171 = item2.getElementsByTag("parameterName").get(225).text();
+			String wx172 = item2.getElementsByTag("parameterName").get(226).text();
+			String wx173 = item2.getElementsByTag("parameterName").get(227).text();
+			String pop171 = item2.getElementsByTag("parameterName").get(228).text();
+			String pop172 = item2.getElementsByTag("parameterName").get(229).text();
+			String pop173 = item2.getElementsByTag("parameterName").get(230).text();
+			String mt171 = item2.getElementsByTag("parameterName").get(231).text();
+			String mt172 = item2.getElementsByTag("parameterName").get(232).text();
+			String mt173 = item2.getElementsByTag("parameterName").get(233).text();
+			String ci171 = item2.getElementsByTag("parameterName").get(234).text();
+			String ci172 = item2.getElementsByTag("parameterName").get(235).text();
+			String ci173 = item2.getElementsByTag("parameterName").get(236).text();
+			String ht171 = item2.getElementsByTag("parameterName").get(237).text();
+			String ht172 = item2.getElementsByTag("parameterName").get(238).text();
+			String ht173 = item2.getElementsByTag("parameterName").get(239).text();
+//金門縣
+			String loca181 = item2.getElementsByTag("locationName").get(16).text();
+			String wx181 = item2.getElementsByTag("parameterName").get(240).text();
+			String wx182 = item2.getElementsByTag("parameterName").get(241).text();
+			String wx183 = item2.getElementsByTag("parameterName").get(242).text();
+			String pop181 = item2.getElementsByTag("parameterName").get(243).text();
+			String pop182 = item2.getElementsByTag("parameterName").get(244).text();
+			String pop183 = item2.getElementsByTag("parameterName").get(245).text();
+			String mt181 = item2.getElementsByTag("parameterName").get(246).text();
+			String mt182 = item2.getElementsByTag("parameterName").get(247).text();
+			String mt183 = item2.getElementsByTag("parameterName").get(248).text();
+			String ci181 = item2.getElementsByTag("parameterName").get(249).text();
+			String ci182 = item2.getElementsByTag("parameterName").get(250).text();
+			String ci183 = item2.getElementsByTag("parameterName").get(251).text();
+			String ht181 = item2.getElementsByTag("parameterName").get(252).text();
+			String ht182 = item2.getElementsByTag("parameterName").get(253).text();
+			String ht183 = item2.getElementsByTag("parameterName").get(254).text();
+//屏東縣
+			String loca191 = item2.getElementsByTag("locationName").get(17).text();
+			String wx191 = item2.getElementsByTag("parameterName").get(255).text();
+			String wx192 = item2.getElementsByTag("parameterName").get(256).text();
+			String wx193 = item2.getElementsByTag("parameterName").get(257).text();
+			String pop191 = item2.getElementsByTag("parameterName").get(258).text();
+			String pop192 = item2.getElementsByTag("parameterName").get(259).text();
+			String pop193 = item2.getElementsByTag("parameterName").get(260).text();
+			String mt191 = item2.getElementsByTag("parameterName").get(261).text();
+			String mt192 = item2.getElementsByTag("parameterName").get(262).text();
+			String mt193 = item2.getElementsByTag("parameterName").get(263).text();
+			String ci191 = item2.getElementsByTag("parameterName").get(264).text();
+			String ci192 = item2.getElementsByTag("parameterName").get(265).text();
+			String ci193 = item2.getElementsByTag("parameterName").get(266).text();
+			String ht191 = item2.getElementsByTag("parameterName").get(267).text();
+			String ht192 = item2.getElementsByTag("parameterName").get(268).text();
+			String ht193 = item2.getElementsByTag("parameterName").get(269).text();
+//基隆市
+			String loca201 = item2.getElementsByTag("locationName").get(18).text();
+			String wx201 = item2.getElementsByTag("parameterName").get(270).text();
+			String wx202 = item2.getElementsByTag("parameterName").get(271).text();
+			String wx203 = item2.getElementsByTag("parameterName").get(272).text();
+			String pop201 = item2.getElementsByTag("parameterName").get(273).text();
+			String pop202 = item2.getElementsByTag("parameterName").get(274).text();
+			String pop203 = item2.getElementsByTag("parameterName").get(275).text();
+			String mt201 = item2.getElementsByTag("parameterName").get(276).text();
+			String mt202 = item2.getElementsByTag("parameterName").get(277).text();
+			String mt203 = item2.getElementsByTag("parameterName").get(278).text();
+			String ci201 = item2.getElementsByTag("parameterName").get(279).text();
+			String ci202 = item2.getElementsByTag("parameterName").get(280).text();
+			String ci203 = item2.getElementsByTag("parameterName").get(281).text();
+			String ht201 = item2.getElementsByTag("parameterName").get(282).text();
+			String ht202 = item2.getElementsByTag("parameterName").get(283).text();
+			String ht203 = item2.getElementsByTag("parameterName").get(284).text();
+//澎湖縣
+			String loca211 = item2.getElementsByTag("locationName").get(19).text();
+			String wx211 = item2.getElementsByTag("parameterName").get(285).text();
+			String wx212 = item2.getElementsByTag("parameterName").get(286).text();
+			String wx213 = item2.getElementsByTag("parameterName").get(287).text();
+			String pop211 = item2.getElementsByTag("parameterName").get(288).text();
+			String pop212 = item2.getElementsByTag("parameterName").get(289).text();
+			String pop213 = item2.getElementsByTag("parameterName").get(290).text();
+			String mt211 = item2.getElementsByTag("parameterName").get(291).text();
+			String mt212 = item2.getElementsByTag("parameterName").get(292).text();
+			String mt213 = item2.getElementsByTag("parameterName").get(293).text();
+			String ci211 = item2.getElementsByTag("parameterName").get(294).text();
+			String ci212 = item2.getElementsByTag("parameterName").get(295).text();
+			String ci213 = item2.getElementsByTag("parameterName").get(296).text();
+			String ht211 = item2.getElementsByTag("parameterName").get(297).text();
+			String ht212 = item2.getElementsByTag("parameterName").get(298).text();
+			String ht213 = item2.getElementsByTag("parameterName").get(299).text();
+//彰化市
+			String loca221 = item2.getElementsByTag("locationName").get(20).text();
+			String wx221 = item2.getElementsByTag("parameterName").get(300).text();
+			String wx222 = item2.getElementsByTag("parameterName").get(301).text();
+			String wx223 = item2.getElementsByTag("parameterName").get(302).text();
+			String pop221 = item2.getElementsByTag("parameterName").get(303).text();
+			String pop222 = item2.getElementsByTag("parameterName").get(304).text();
+			String pop223 = item2.getElementsByTag("parameterName").get(305).text();
+			String mt221 = item2.getElementsByTag("parameterName").get(306).text();
+			String mt222 = item2.getElementsByTag("parameterName").get(307).text();
+			String mt223 = item2.getElementsByTag("parameterName").get(308).text();
+			String ci221 = item2.getElementsByTag("parameterName").get(309).text();
+			String ci222 = item2.getElementsByTag("parameterName").get(310).text();
+			String ci223 = item2.getElementsByTag("parameterName").get(311).text();
+			String ht221 = item2.getElementsByTag("parameterName").get(312).text();
+			String ht222 = item2.getElementsByTag("parameterName").get(313).text();
+			String ht223 = item2.getElementsByTag("parameterName").get(314).text();
+//連江縣
+			String loca231 = item2.getElementsByTag("locationName").get(21).text();
+			String wx231 = item2.getElementsByTag("parameterName").get(315).text();
+			String wx232 = item2.getElementsByTag("parameterName").get(316).text();
+			String wx233 = item2.getElementsByTag("parameterName").get(317).text();
+			String pop231 = item2.getElementsByTag("parameterName").get(318).text();
+			String pop232 = item2.getElementsByTag("parameterName").get(319).text();
+			String pop233 = item2.getElementsByTag("parameterName").get(320).text();
+			String mt231 = item2.getElementsByTag("parameterName").get(321).text();
+			String mt232 = item2.getElementsByTag("parameterName").get(322).text();
+			String mt233 = item2.getElementsByTag("parameterName").get(323).text();
+			String ci231 = item2.getElementsByTag("parameterName").get(324).text();
+			String ci232 = item2.getElementsByTag("parameterName").get(325).text();
+			String ci233 = item2.getElementsByTag("parameterName").get(326).text();
+			String ht231 = item2.getElementsByTag("parameterName").get(327).text();
+			String ht232 = item2.getElementsByTag("parameterName").get(328).text();
+			String ht233 = item2.getElementsByTag("parameterName").get(329).text();
 
 
 			JSONObject body = new JSONObject();
 			JSONArray messages = new JSONArray();
 			JSONObject message = new JSONObject();
 			message.put("type", "text");
-					switch (text) {
+			String 台東 = list + "\n" + loca141 + "\n" + st21 + "\n" + "~" + "\n" + et21 + "\n" + "氣溫：" + mt141 + "度" + "~" + ht141 + "度" + "\n" + "天氣狀況：" + wx141 + "\n" + "降雨機率：" + pop141 + "%" + "\n" + "體感：" + ci141 + "\n" + "-" + "\n"
+					+ st22 + "\n" + "~" + "\n" + et22 + "\n" + "氣溫：" + mt142 + "度" + "~" + ht142 + "度" + "\n" + "天氣狀況：" + wx142 + "\n" + "降雨機率：" + pop142 + "%" + "\n" + "體感：" + ci142 + "\n" + "-" + "\n"
+					+ st23 + "\n" + "~" + "\n" + et23 + "\n" + "氣溫：" + mt143 + "度" + "~" + ht143 + "度" + "\n" + "天氣狀況：" + wx143 + "\n" + "降雨機率：" + pop143 + "%" + "\n" + "體感：" + ci143 + "\n" + "-" + "\n";
+			String 台中 = list + "\n" + loca131 + "\n" + st21 + "\n" + "~" + "\n" + et21 + "\n" + "氣溫：" + mt131 + "度" + "~" + ht131 + "度" + "\n" + "天氣狀況：" + wx131 + "\n" + "降雨機率：" + pop131 + "%" + "\n" + "體感：" + ci131 + "\n" + "-" + "\n"
+					+ st22 + "\n" + "~" + "\n" + et22 + "\n" + "氣溫：" + mt132 + "度" + "~" + ht132 + "度" + "\n" + "天氣狀況：" + wx132 + "\n" + "降雨機率：" + pop132 + "%" + "\n" + "體感：" + ci132 + "\n" + "-" + "\n"
+					+ st23 + "\n" + "~" + "\n" + et23 + "\n" + "氣溫：" + mt133 + "度" + "~" + ht133 + "度" + "\n" + "天氣狀況：" + wx133 + "\n" + "降雨機率：" + pop133 + "%" + "\n" + "體感：" + ci133 + "\n" + "-" + "\n";
+			String 台南 = list + "\n" + loca81 + "\n" + st21 + "\n" + "~" + "\n" + et21 + "\n" + "氣溫：" + mt81 + "度" + "~" + ht81 + "度" + "\n" + "天氣狀況：" + wx81 + "\n" + "降雨機率：" + pop81 + "%" + "\n" + "體感：" + ci81 + "\n" + "-" + "\n"
+					+ st22 + "\n" + "~" + "\n" + et22 + "\n" + "氣溫：" + mt82 + "度" + "~" + ht82 + "度" + "\n" + "天氣狀況：" + wx82 + "\n" + "降雨機率：" + pop82 + "%" + "\n" + "體感：" + ci82 + "\n" + "-" + "\n"
+					+ st23 + "\n" + "~" + "\n" + et23 + "\n" + "氣溫：" + mt83 + "度" + "~" + ht83 + "度" + "\n" + "天氣狀況：" + wx83 + "\n" + "降雨機率：" + pop83 + "%" + "\n" + "體感：" + ci83 + "\n" + "-" + "\n";
+			String 台北 = list + "\n" + loca71 + "\n" + st21 + "\n" + "~" + "\n" + et21 + "\n" + "氣溫：" + mt71 + "度" + "~" + ht71 + "度" + "\n" + "天氣狀況：" + wx71 + "\n" + "降雨機率：" + pop71 + "%" + "\n" + "體感：" + ci71 + "\n" + "-" + "\n"
+					+ st22 + "\n" + "~" + "\n" + et22 + "\n" + "氣溫：" + mt72 + "度" + "~" + ht72 + "度" + "\n" + "天氣狀況：" + wx72 + "\n" + "降雨機率：" + pop72 + "%" + "\n" + "體感：" + ci72 + "\n" + "-" + "\n"
+					+ st23 + "\n" + "~" + "\n" + et23 + "\n" + "氣溫：" + mt73 + "度" + "~" + ht73 + "度" + "\n" + "天氣狀況：" + wx73 + "\n" + "降雨機率：" + pop73 + "%" + "\n" + "體感：" + ci73 + "\n" + "-" + "\n";
+			switch (text) {
 				case "你好":
 					message.put("text", "哈囉，我是全能小幫手Bnson");
 					break;
@@ -248,19 +515,116 @@ public class MessageHandler {
 							);
 				break;
 				case "台北市天氣":
-							message.put("text",list +"\n" +loca71+"\n"+st21+"\n"+"~"+"\n"+et21+"\n"+"氣溫："+mt71+"度"+"~"+ht71+"度"+"\n"+"天氣狀況："+wx71+"\n"+"降雨機率："+pop71+"%"+"\n"+"體感："+ci71+"\n"+"-"+"\n"
-									+st22+"\n"+"~"+"\n"+et22+"\n"+"氣溫："+mt72+"度"+"~"+ht72+"度"+"\n"+"天氣狀況："+wx72+"\n"+"降雨機率："+pop72+"%"+"\n"+"體感："+ci72+"\n"+"-"+"\n"
-									+st23+"\n"+"~"+"\n"+et23+"\n"+"氣溫："+mt73+"度"+"~"+ht73+"度"+"\n"+"天氣狀況："+wx73+"\n"+"降雨機率："+pop73+"%"+"\n"+"體感："+ci73+"\n"+"-"+"\n"
+							message.put("text", 台北
 							);
 				break;
+				case "臺北市天氣":
+					message.put("text", 台北
+					);
+					break;
 				case "台南市天氣":
-							message.put("text", list +"\n" +loca81+"\n"+st21+"\n"+"~"+"\n"+et21+"\n"+"氣溫："+mt81+"度"+"~"+ht81+"度"+"\n"+"天氣狀況："+wx81+"\n"+"降雨機率："+pop81+"%"+"\n"+"體感："+ci81+"\n"+"-"+"\n"
-									+st22+"\n"+"~"+"\n"+et22+"\n"+"氣溫："+mt82+"度"+"~"+ht82+"度"+"\n"+"天氣狀況："+wx82+"\n"+"降雨機率："+pop82+"%"+"\n"+"體感："+ci82+"\n"+"-"+"\n"
-									+st23+"\n"+"~"+"\n"+et23+"\n"+"氣溫："+mt83+"度"+"~"+ht83+"度"+"\n"+"天氣狀況："+wx83+"\n"+"降雨機率："+pop83+"%"+"\n"+"體感："+ci83+"\n"+"-"+"\n"
+							message.put("text", 台南
 							);
 				break;
-
-				default:
+				case "臺南市天氣":
+					message.put("text", 台南
+					);
+					break;
+						case "宜蘭縣天氣":
+						message.put("text",list +"\n" +loca91+"\n"+st21+"\n"+"~"+"\n"+et21+"\n"+"氣溫："+mt91+"度"+"~"+ht91+"度"+"\n"+"天氣狀況："+wx91+"\n"+"降雨機率："+pop91+"%"+"\n"+"體感："+ci91+"\n"+"-"+"\n"
+								+st22+"\n"+"~"+"\n"+et22+"\n"+"氣溫："+mt92+"度"+"~"+ht92+"度"+"\n"+"天氣狀況："+wx92+"\n"+"降雨機率："+pop92+"%"+"\n"+"體感："+ci92+"\n"+"-"+"\n"
+								+st23+"\n"+"~"+"\n"+et23+"\n"+"氣溫："+mt93+"度"+"~"+ht93+"度"+"\n"+"天氣狀況："+wx93+"\n"+"降雨機率："+pop93+"%"+"\n"+"體感："+ci93+"\n"+"-"+"\n"
+						);
+						break;
+						case "苗栗縣天氣":
+							message.put("text",list +"\n" +loca101+"\n"+st21+"\n"+"~"+"\n"+et21+"\n"+"氣溫："+mt101+"度"+"~"+ht101+"度"+"\n"+"天氣狀況："+wx101+"\n"+"降雨機率："+pop101+"%"+"\n"+"體感："+ci101+"\n"+"-"+"\n"
+									+st22+"\n"+"~"+"\n"+et22+"\n"+"氣溫："+mt102+"度"+"~"+ht102+"度"+"\n"+"天氣狀況："+wx102+"\n"+"降雨機率："+pop102+"%"+"\n"+"體感："+ci102+"\n"+"-"+"\n"
+									+st23+"\n"+"~"+"\n"+et23+"\n"+"氣溫："+mt103+"度"+"~"+ht103+"度"+"\n"+"天氣狀況："+wx103+"\n"+"降雨機率："+pop103+"%"+"\n"+"體感："+ci103+"\n"+"-"+"\n"
+							);
+							break;
+						case "雲林縣天氣":
+							message.put("text",list +"\n" +loca111+"\n"+st21+"\n"+"~"+"\n"+et21+"\n"+"氣溫："+mt111+"度"+"~"+ht111+"度"+"\n"+"天氣狀況："+wx111+"\n"+"降雨機率："+pop111+"%"+"\n"+"體感："+ci111+"\n"+"-"+"\n"
+									+st22+"\n"+"~"+"\n"+et22+"\n"+"氣溫："+mt112+"度"+"~"+ht112+"度"+"\n"+"天氣狀況："+wx112+"\n"+"降雨機率："+pop112+"%"+"\n"+"體感："+ci112+"\n"+"-"+"\n"
+									+st23+"\n"+"~"+"\n"+et23+"\n"+"氣溫："+mt113+"度"+"~"+ht113+"度"+"\n"+"天氣狀況："+wx113+"\n"+"降雨機率："+pop113+"%"+"\n"+"體感："+ci113+"\n"+"-"+"\n"
+							);
+							break;
+						case "花蓮縣天氣":
+							message.put("text",list +"\n" +loca121+"\n"+st21+"\n"+"~"+"\n"+et21+"\n"+"氣溫："+mt121+"度"+"~"+ht121+"度"+"\n"+"天氣狀況："+wx121+"\n"+"降雨機率："+pop121+"%"+"\n"+"體感："+ci121+"\n"+"-"+"\n"
+									+st22+"\n"+"~"+"\n"+et22+"\n"+"氣溫："+mt122+"度"+"~"+ht122+"度"+"\n"+"天氣狀況："+wx122+"\n"+"降雨機率："+pop122+"%"+"\n"+"體感："+ci122+"\n"+"-"+"\n"
+									+st23+"\n"+"~"+"\n"+et23+"\n"+"氣溫："+mt123+"度"+"~"+ht123+"度"+"\n"+"天氣狀況："+wx123+"\n"+"降雨機率："+pop123+"%"+"\n"+"體感："+ci123+"\n"+"-"+"\n"
+							);
+							break;
+						case "台中市天氣":
+							message.put("text", 台中
+							);
+							break;
+				case "臺中市天氣":
+					message.put("text", 台中
+					);
+					break;
+						case "台東縣天氣":
+							message.put("text", 台東
+							);
+							break;
+						case "臺東縣天氣":
+							message.put("text", 台東
+							);
+							break;
+						case "桃園市天氣":
+							message.put("text",list +"\n" +loca151+"\n"+st21+"\n"+"~"+"\n"+et21+"\n"+"氣溫："+mt151+"度"+"~"+ht151+"度"+"\n"+"天氣狀況："+wx151+"\n"+"降雨機率："+pop151+"%"+"\n"+"體感："+ci151+"\n"+"-"+"\n"
+									+st22+"\n"+"~"+"\n"+et22+"\n"+"氣溫："+mt152+"度"+"~"+ht152+"度"+"\n"+"天氣狀況："+wx152+"\n"+"降雨機率："+pop152+"%"+"\n"+"體感："+ci152+"\n"+"-"+"\n"
+									+st23+"\n"+"~"+"\n"+et23+"\n"+"氣溫："+mt153+"度"+"~"+ht153+"度"+"\n"+"天氣狀況："+wx153+"\n"+"降雨機率："+pop153+"%"+"\n"+"體感："+ci153+"\n"+"-"+"\n"
+							);
+							break;
+						case "南投縣天氣":
+							message.put("text",list +"\n" +loca161+"\n"+st21+"\n"+"~"+"\n"+et21+"\n"+"氣溫："+mt161+"度"+"~"+ht161+"度"+"\n"+"天氣狀況："+wx161+"\n"+"降雨機率："+pop161+"%"+"\n"+"體感："+ci161+"\n"+"-"+"\n"
+									+st22+"\n"+"~"+"\n"+et22+"\n"+"氣溫："+mt162+"度"+"~"+ht162+"度"+"\n"+"天氣狀況："+wx162+"\n"+"降雨機率："+pop162+"%"+"\n"+"體感："+ci162+"\n"+"-"+"\n"
+									+st23+"\n"+"~"+"\n"+et23+"\n"+"氣溫："+mt163+"度"+"~"+ht163+"度"+"\n"+"天氣狀況："+wx163+"\n"+"降雨機率："+pop163+"%"+"\n"+"體感："+ci163+"\n"+"-"+"\n"
+							);
+							break;
+						case "高雄市天氣":
+							message.put("text",list +"\n" +loca171+"\n"+st21+"\n"+"~"+"\n"+et21+"\n"+"氣溫："+mt171+"度"+"~"+ht171+"度"+"\n"+"天氣狀況："+wx171+"\n"+"降雨機率："+pop171+"%"+"\n"+"體感："+ci171+"\n"+"-"+"\n"
+									+st22+"\n"+"~"+"\n"+et22+"\n"+"氣溫："+mt172+"度"+"~"+ht172+"度"+"\n"+"天氣狀況："+wx172+"\n"+"降雨機率："+pop172+"%"+"\n"+"體感："+ci172+"\n"+"-"+"\n"
+									+st23+"\n"+"~"+"\n"+et23+"\n"+"氣溫："+mt173+"度"+"~"+ht173+"度"+"\n"+"天氣狀況："+wx173+"\n"+"降雨機率："+pop173+"%"+"\n"+"體感："+ci173+"\n"+"-"+"\n"
+							);
+							break;
+						case "金門縣天氣":
+							message.put("text",list +"\n" +loca181+"\n"+st21+"\n"+"~"+"\n"+et21+"\n"+"氣溫："+mt181+"度"+"~"+ht181+"度"+"\n"+"天氣狀況："+wx181+"\n"+"降雨機率："+pop181+"%"+"\n"+"體感："+ci181+"\n"+"-"+"\n"
+									+st22+"\n"+"~"+"\n"+et22+"\n"+"氣溫："+mt182+"度"+"~"+ht182+"度"+"\n"+"天氣狀況："+wx182+"\n"+"降雨機率："+pop182+"%"+"\n"+"體感："+ci182+"\n"+"-"+"\n"
+									+st23+"\n"+"~"+"\n"+et23+"\n"+"氣溫："+mt183+"度"+"~"+ht183+"度"+"\n"+"天氣狀況："+wx183+"\n"+"降雨機率："+pop183+"%"+"\n"+"體感："+ci183+"\n"+"-"+"\n"
+							);
+							break;
+						case "屏東縣天氣":
+							message.put("text",list +"\n" +loca191+"\n"+st21+"\n"+"~"+"\n"+et21+"\n"+"氣溫："+mt191+"度"+"~"+ht191+"度"+"\n"+"天氣狀況："+wx191+"\n"+"降雨機率："+pop191+"%"+"\n"+"體感："+ci191+"\n"+"-"+"\n"
+									+st22+"\n"+"~"+"\n"+et22+"\n"+"氣溫："+mt192+"度"+"~"+ht192+"度"+"\n"+"天氣狀況："+wx192+"\n"+"降雨機率："+pop192+"%"+"\n"+"體感："+ci192+"\n"+"-"+"\n"
+									+st23+"\n"+"~"+"\n"+et23+"\n"+"氣溫："+mt193+"度"+"~"+ht193+"度"+"\n"+"天氣狀況："+wx193+"\n"+"降雨機率："+pop193+"%"+"\n"+"體感："+ci193+"\n"+"-"+"\n"
+							);
+							break;
+						case "基隆市天氣":
+							message.put("text",list +"\n" +loca201+"\n"+st21+"\n"+"~"+"\n"+et21+"\n"+"氣溫："+mt201+"度"+"~"+ht201+"度"+"\n"+"天氣狀況："+wx201+"\n"+"降雨機率："+pop201+"%"+"\n"+"體感："+ci201+"\n"+"-"+"\n"
+									+st22+"\n"+"~"+"\n"+et22+"\n"+"氣溫："+mt202+"度"+"~"+ht202+"度"+"\n"+"天氣狀況："+wx202+"\n"+"降雨機率："+pop202+"%"+"\n"+"體感："+ci202+"\n"+"-"+"\n"
+									+st23+"\n"+"~"+"\n"+et23+"\n"+"氣溫："+mt203+"度"+"~"+ht203+"度"+"\n"+"天氣狀況："+wx203+"\n"+"降雨機率："+pop203+"%"+"\n"+"體感："+ci203+"\n"+"-"+"\n"
+							);
+							break;
+						case "澎湖縣天氣":
+							message.put("text",list +"\n" +loca211+"\n"+st21+"\n"+"~"+"\n"+et21+"\n"+"氣溫："+mt211+"度"+"~"+ht211+"度"+"\n"+"天氣狀況："+wx211+"\n"+"降雨機率："+pop211+"%"+"\n"+"體感："+ci211+"\n"+"-"+"\n"
+									+st22+"\n"+"~"+"\n"+et22+"\n"+"氣溫："+mt212+"度"+"~"+ht212+"度"+"\n"+"天氣狀況："+wx212+"\n"+"降雨機率："+pop212+"%"+"\n"+"體感："+ci212+"\n"+"-"+"\n"
+									+st23+"\n"+"~"+"\n"+et23+"\n"+"氣溫："+mt213+"度"+"~"+ht213+"度"+"\n"+"天氣狀況："+wx213+"\n"+"降雨機率："+pop213+"%"+"\n"+"體感："+ci213+"\n"+"-"+"\n"
+							);
+							break;
+						case "彰化市天氣":
+							message.put("text",list +"\n" +loca221+"\n"+st21+"\n"+"~"+"\n"+et21+"\n"+"氣溫："+mt221+"度"+"~"+ht221+"度"+"\n"+"天氣狀況："+wx221+"\n"+"降雨機率："+pop221+"%"+"\n"+"體感："+ci221+"\n"+"-"+"\n"
+									+st22+"\n"+"~"+"\n"+et22+"\n"+"氣溫："+mt222+"度"+"~"+ht222+"度"+"\n"+"天氣狀況："+wx222+"\n"+"降雨機率："+pop222+"%"+"\n"+"體感："+ci222+"\n"+"-"+"\n"
+									+st23+"\n"+"~"+"\n"+et23+"\n"+"氣溫："+mt223+"度"+"~"+ht223+"度"+"\n"+"天氣狀況："+wx223+"\n"+"降雨機率："+pop223+"%"+"\n"+"體感："+ci223+"\n"+"-"+"\n"
+							);
+							break;
+						case "連江縣天氣":
+							message.put("text",list +"\n" +loca231+"\n"+st21+"\n"+"~"+"\n"+et21+"\n"+"氣溫："+mt231+"度"+"~"+ht231+"度"+"\n"+"天氣狀況："+wx231+"\n"+"降雨機率："+pop231+"%"+"\n"+"體感："+ci231+"\n"+"-"+"\n"
+									+st22+"\n"+"~"+"\n"+et22+"\n"+"氣溫："+mt232+"度"+"~"+ht232+"度"+"\n"+"天氣狀況："+wx232+"\n"+"降雨機率："+pop232+"%"+"\n"+"體感："+ci232+"\n"+"-"+"\n"
+									+st23+"\n"+"~"+"\n"+et23+"\n"+"氣溫："+mt233+"度"+"~"+ht233+"度"+"\n"+"天氣狀況："+wx233+"\n"+"降雨機率："+pop233+"%"+"\n"+"體感："+ci233+"\n"+"-"+"\n"
+							);
+							break;
+						default:
 					message.put("text", "我還看不懂，我目前只看得懂以下指令" + "\n" + ":縣市天氣"+ "\n" + ":下周油價" + "\n" + ":華語歌曲推薦");
 					break;
 			}
