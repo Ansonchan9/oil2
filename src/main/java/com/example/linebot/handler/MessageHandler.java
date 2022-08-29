@@ -624,9 +624,7 @@ public class MessageHandler {
 									+st23+"\n"+"~"+"\n"+et23+"\n"+"氣溫："+mt233+"度"+"~"+ht233+"度"+"\n"+"天氣狀況："+wx233+"\n"+"降雨機率："+pop233+"%"+"\n"+"體感："+ci233+"\n"+"-"+"\n"
 							);
 							break;
-						default:
-					message.put("text", "我還看不懂，我目前只看得懂以下指令" + "\n" + ":縣市天氣"+ "\n" + ":下周油價" + "\n" + ":華語歌曲推薦");
-					break;
+						
 			}
 			messages.put(message);
 			body.put("replyToken", replyToken);
