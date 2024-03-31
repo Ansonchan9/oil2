@@ -62,9 +62,7 @@ public class MessageHandler {
 			case "下週油價":
 				message.put("text", "下週油價："+"\n"+title1+title);
 				break;
-			default:
-				message.put("text", "我還看不懂，我目前只看得懂以下指令"+"\n"+":下周油價");
-			break;
+			
 		}
 		messages.put(message);
 		body.put("replyToken", replyToken);
