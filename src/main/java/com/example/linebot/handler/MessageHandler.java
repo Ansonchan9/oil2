@@ -40,6 +40,9 @@ public class MessageHandler {
 	private void text(String replyToken, String text) throws IOException {
 		Document document = Jsoup.connect("https://gas.goodlife.tw/").get();
 		Elements items = document.getElementsByClass("scroll");
+		Document document1 = Jsoup.connect("https://music-tw.line.me/chart/99").get();
+		Elements items1 = document.getElementsByClass("scroll");
+
 		for (Element item : items) {
 			String title1 = item.getElementsByClass("main").get(0).getElementsByTag("p").get(0).text();
 			String title = item.getElementsByClass("main").get(0).getElementsByTag("h2").get(0).text();
@@ -62,15 +65,44 @@ public class MessageHandler {
 			case "下週油價":
 				message.put("text", "下週油價："+"\n"+title1+title);
 				break;
-			
+	
 		}
 		messages.put(message);
 		body.put("replyToken", replyToken);
 		body.put("messages", messages);
 		sendLinePlatform(body);
 			}
+			
+			for (Element item : items1) {
+				String title1 = item.getElementsByClass("title_badge_wrap").get(0).text();
+				String title = item.getElementsByClass("title_badge_wrap").get(0).text();
+				String quote = "";
+				if (item.getElementsByClass("quote").size() > 0) {
+					quote = item.getElementsByClass("quote").get(0).text();
+				}
+	
+			JSONObject body = new JSONObject();
+			JSONArray messages = new JSONArray();
+			JSONObject message = new JSONObject();
+			message.put("type", "text");
+			switch (text){
+				case "排行":
+					message.put("text", "哈囉，我是油價小幫手");
+					break;
+				case "下周油價":
+					message.put("text", "下周油價："+"\n"+title1+title);
+					break;
+				case "下週油價":
+					message.put("text", "下週油價："+"\n"+title1+title);
+					break;
+		
+			}
+			messages.put(message);
+			body.put("replyToken", replyToken);
+			body.put("messages", messages);
+			sendLinePlatform(body);
+				}
 		}
-
 
 
 	private void sticker(String replyToken, String packageId, String stickerId) {
