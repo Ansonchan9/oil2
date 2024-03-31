@@ -37,57 +37,39 @@ public class MessageHandler {
 	}
 
 	private void text(String replyToken, String text) throws IOException {
-
 		Document document = Jsoup.connect("https://gas.goodlife.tw/").get();
-		Element items = document.getElementById("fixlayer");
-		Document document1 = Jsoup.connect("https://music-tw.line.me/chart/99").get();
-		Element items1 = document1.getElementById("content");
-
-
-			String oilup = items.getElementsByClass("gas-price").get(0).text();
-			String oil = items.getElementsByClass("gas-price").get(0).text();
-			String rank = items1.getElementsByClass("text").get(0).text();
-			String list1 = items1.getElementsByClass("end_title").get(0).text();
-			String song1 = items1.getElementsByClass("link_text").get(0).text();
-			String singer1 = items1.getElementsByClass("link_artist").get(0).text();
-			String rank2 = items1.getElementsByClass("text").get(1).text();
-			String song2 = items1.getElementsByClass("link_text").get(1).text();
-			String singer2 = items1.getElementsByClass("link_artist").get(2).text();
-			String rank3 = items1.getElementsByClass("text").get(2).text();
-			String song3 = items1.getElementsByClass("link_text").get(2).text();
-			String singer3 = items1.getElementsByClass("link_artist").get(4).text();
-			String rank4 = items1.getElementsByClass("text").get(3).text();
-			String song4 = items1.getElementsByClass("link_text").get(3).text();
-			String singer4 = items1.getElementsByClass("link_artist").get(6).text();
-			String rank5 = items1.getElementsByClass("text").get(4).text();
-			String song5 = items1.getElementsByClass("link_text").get(4).text();
-			String singer5 = items1.getElementsByClass("link_artist").get(8).text();
-			JSONObject body = new JSONObject();
-			JSONArray messages = new JSONArray();
-			JSONObject message = new JSONObject();
-			message.put("type", "text");
-switch (text) {
-				case "你好":
-					message.put("text", "哈囉，我是全能小幫手Bnson");
-					break;
-				case "下周油價":
-					message.put("text", "下周油價：" + "\n" + oil + "\n" + oilup);
-					break;
-				case "下週油價":
-					message.put("text", "下週油價：" + "\n" + oil + "\n" + oilup);
-					break;
-				case "華語歌曲推薦":
-					message.put("text", list1 + "\n" + rank + "\n" + "歌名：" + song1 + "\n" + "演唱人：" + singer1 + "\n"
-							+ rank2 + "\n" + "歌名：" + song2 + "\n" + "演唱人：" + singer2 + "\n"
-							+ rank3 + "\n" + "歌名：" + song3 + "\n" + "演唱人：" + singer3 + "\n"
-							+ rank4 + "\n" + "歌名：" + song4 + "\n" + "演唱人：" + singer4 + "\n"
-							+ rank5 + "\n" + "歌名：" + song5 + "\n" + "演唱人：" + singer5);
-					break;		
+		Elements items = document.getElementsByClass("scroll");
+		for (Element item : items) {
+			String title1 = item.getElementsByClass("main").get(0).getElementsByTag("p").get(0).text();
+			String title = item.getElementsByClass("main").get(0).getElementsByTag("h2").get(0).text();
+			String quote = "";
+			if (item.getElementsByClass("quote").size() > 0) {
+				quote = item.getElementsByClass("quote").get(0).text();
 			}
-			messages.put(message);
-			body.put("replyToken", replyToken);
-			body.put("messages", messages);
-			sendLinePlatform(body);
+
+		JSONObject body = new JSONObject();
+		JSONArray messages = new JSONArray();
+		JSONObject message = new JSONObject();
+		message.put("type", "text");
+		switch (text){
+			case "你好":
+				message.put("text", "哈囉，我是油價小幫手");
+				break;
+			case "下周油價":
+				message.put("text", "下周油價："+"\n"+title1+title);
+				break;
+			case "下週油價":
+				message.put("text", "下週油價："+"\n"+title1+title);
+				break;
+			default:
+				message.put("text", "我還看不懂，我目前只看得懂以下指令"+"\n"+":下周油價");
+			break;
+		}
+		messages.put(message);
+		body.put("replyToken", replyToken);
+		body.put("messages", messages);
+		sendLinePlatform(body);
+			}
 		}
 
 
