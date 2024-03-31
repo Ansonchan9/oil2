@@ -41,7 +41,7 @@ public class MessageHandler {
 		Document document = Jsoup.connect("https://gas.goodlife.tw/").get();
 		Elements items = document.getElementsByClass("scroll");
 		Document document1 = Jsoup.connect("https://music-tw.line.me/chart/99").get();
-		Elements items1 = document.getElementsByClass("scroll");
+		Elements items1 = document1.getElementsByClass("scroll");
 
 		for (Element item : items) {
 			String title1 = item.getElementsByClass("main").get(0).getElementsByTag("p").get(0).text();
