@@ -27,8 +27,8 @@ public class MessageHandler {
 
 	public void doAction(JSONObject event) throws IOException {
 		switch (event.getJSONObject("message").getString("type")) {
-		case "text"+"門市":
-			text(event.getString("replyToken"), event.getJSONObject("message").getString("text"));
+		case "text":
+			text(event.getString("replyToken"), event.getJSONObject("message").getString("text")+"門市");
 			break;
 		case "sticker":
 			sticker(event.getString("replyToken"), event.getJSONObject("message").getString("packageId"),
