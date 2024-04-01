@@ -56,8 +56,8 @@ public class MessageHandler {
 		JSONObject message = new JSONObject();
 		message.put("type", "text");
 
-		switch ("text"+"門市"){
-			case "你好":
+		switch (text){
+			case "text"+"門市":
 				message.put("text", "哈囉，我是油價小幫手");
 				break;
 			case "下周油價":
