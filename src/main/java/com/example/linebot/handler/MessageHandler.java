@@ -55,7 +55,7 @@ public class MessageHandler {
 		JSONArray messages = new JSONArray();
 		JSONObject message = new JSONObject();
 		message.put("type", "text");
-		switch (text){
+		switch ("門市"+text){
 			case "你好":
 				message.put("text", "哈囉，我是油價小幫手");
 				break;
@@ -73,38 +73,7 @@ public class MessageHandler {
 		sendLinePlatform(body);
 			}
 			
-			for (Element item : items1) {
-				String title1 = item.getElementsByClass("title_badge_wrap").get(0).text();
-				String title = item.getElementsByClass("title_badge_wrap").get(0).text();
-				String quote = "";
-				if (item.getElementsByClass("quote").size() > 0) {
-					quote = item.getElementsByClass("quote").get(0).text();
-				}
-	
-			JSONObject body = new JSONObject();
-			JSONArray messages = new JSONArray();
-			JSONObject message = new JSONObject();
-			message.put("type", "text");
-			switch (text){
-				case "門市"+"向日葵":
-					message.put("text", "此門市尚未保養");
-					break;
-				case "門市"+text:
-					message.put("text", "此門市尚未保養");
-					break;
-				case "下周油價":
-					message.put("text", "下周油價："+"\n"+title1+title);
-					break;
-				case "下週油價":
-					message.put("text", "下週油價："+"\n"+title1+title);
-					break;
-		
-			}
-			messages.put(message);
-			body.put("replyToken", replyToken);
-			body.put("messages", messages);
-			sendLinePlatform(body);
-				}
+
 		}
 
 
