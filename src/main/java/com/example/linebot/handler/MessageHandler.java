@@ -28,7 +28,7 @@ public class MessageHandler {
 	public void doAction(JSONObject event) throws IOException {
 		switch (event.getJSONObject("message").getString("type")) {
 		case "text":
-			text(event.getString("replyToken"), event.getJSONObject("message").getString("text")+"門市");
+			text(event.getString("replyToken"), event.getJSONObject("message").getString("text"));
 			break;
 		case "sticker":
 			sticker(event.getString("replyToken"), event.getJSONObject("message").getString("packageId"),
@@ -54,7 +54,7 @@ public class MessageHandler {
 		JSONObject body = new JSONObject();
 		JSONArray messages = new JSONArray();
 		JSONObject message = new JSONObject();
-		message.put("type", "text");
+		message.put("type", "text"+"門市");
 
 		message.put("text",text+"門市尚未保養" );
 		switch (text){
